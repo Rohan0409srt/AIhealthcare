@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HashRouter as Router } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 
 
 
