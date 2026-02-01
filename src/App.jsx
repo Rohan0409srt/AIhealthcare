@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
+
 
 
 import Navbar from "./Navbar/Navbar";
@@ -22,7 +24,8 @@ function App() {
     initDemoDoctor();
   }, []);
   return (
-    <BrowserRouter>
+    <Router>
+
       <Navbar />
 
       <Routes>
@@ -36,7 +39,8 @@ function App() {
 
 
       </Routes>
-    </BrowserRouter>
+   </Router>
+
   );
 }
 
