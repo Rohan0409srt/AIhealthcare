@@ -1,0 +1,117 @@
+/* ===== CONTAINER ===== */
+.doctor-login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a4da2, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.doctor-login-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* HEADING */
+.doctor-login-card h2 {
+  color: #0a4da2;
+  margin-bottom: 6px;
+}
+
+.doctor-login-card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.doctor-login-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.doctor-login-card input:focus {
+  outline: none;
+  border-color: #0a4da2;
+}
+
+/* BUTTON */
+.doctor-login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0a4da2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.doctor-login-card button:hover {
+  background-color: #083b7a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .doctor-login-card {
+    padding: 30px 20px;
+  }
+
+  .doctor-login-card h2 {
+    font-size: 20px;
+  }
+}
+/* ===== CAPTCHA (ALPHANUMERIC) ===== */
+.captcha-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.captcha-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #0a4da2;
+  user-select: none;
+  font-family: "Courier New", monospace;
+}
+
+/* REFRESH BUTTON */
+.refresh-btn {
+  border: none;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .captcha-text {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+}
